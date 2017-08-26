@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>C9JS Fundementals</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="jqscript.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <script type="text/javascript">
+            function substitute() {
+                var myValue = document.getElementById("myTextBox").value;
+                if (myValue.length == 0) {
+                    alert("Please enter a value in the text box");
+                    return;
+                }
+                else {
+                    document.getElementById("textCopy").innerHTML = myValue;
+                    //copyValue.innerHTML = myValue
+                }
+            }
+        </script> -->
+    <script type="text/javascript">
+        function localCalc() {
+            document.getElementById("expression").value = calc(document.getElementById("expression").value);
+        }
+    </script>
+</head>
+<!-- <body onload="alert('Hello World!')"> -->
+
+<body>
+    <div>
+        <h1>C9JS Fundementals</h1>
+        <h2 id="subtitle">sub title</h2>
+        <hr />
+    </div>
+    <div>
+        <h3>Testing REST calls</h3>
+        <!-- <a href="#" id="githubGet">Test Rest</a> -->
+        <a href="#" onclick="getGithubProfile()">Test Rest</a>
+        <github>
+        </github>
+        <hr/>
+    </div>
+    <h3>Click-a-Bob game</h3>
+    <div>
+        <img src="elvis.jpg" id="gameImage" onclick="updateScore()" />
+    </div>
+    <div>
+        <p>Score: <span id="score">0</span></p>
+        <p id="success">You clicked-a-bob!</p>
+        <div id="startover">Start Over</div>
+    </div>
+    <div>
+        <br>
+        <hr />
+        <input type="text" id="myTextBox" />
+        <input type="submit" value="click me" onclick="substitute()" />
+        <p id="textCopy">textCopy</p>
+        <hr/>
+        <h3>Checking the type of an inputvalue</h3>
+        <input type="text" id="checkTypeValue" />
+        <input type="button" value="Check" onclick="checkValueType()" />
+        <hr/>
+        <h3>Checking the type of an inputvalue</h3>
+        <input type="text" id="expression">type epxression</input>
+        <input type="button" value="solve" onclick="localCalc()" />
+        <hr />
+        <p id="firstp">paragraph 1 </p>
+        <p>paragraph 2 </p>
+        <p class="chosen">paragraph 3 </p>
+        <hr />
+        <ul id="ullist">
+            <li class='highlight' onclick="makeChosen(this)"><a href="#">One</a></li>
+            <li onclick="makeChosen(this)"><a href="#">two</a></li>
+            <li onclick="makeChosen(this)"><a href="#">three</a></li>
+            <li onclick="makeChosen(this)"><a href="#">four</a></li>
+        </ul>
+    </div>
+    <div>
+        <hr>
+        <p>Form example</p>
+        <form id="testForm" onsubmit="submitTestForm()">
+            First Name:
+            <input type="text" name="firstName" value="frist name"><br>
+            Last Name: 
+            <input type="text" name="lastName" value="last name"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tictactoe</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="t3.js"></script>
+    <link rel="stylesheet" type="text/css" href="t3.css" />
+</head>
+
+<body>
+    <div>
+        <h2>Tic Tac Toe</h2>
+        <a href='#' onclick="initBoard()">Start New Game</a>
+        <div id="board">
+            <table>
+                <tr id="row1">
+                    <td pos="0" class="square" onclick="squarePicked(this)"></td>
+                    <td pos="1" class="square" onclick="squarePicked(this)"></td>
+                    <td pos="2" class="square" onclick="squarePicked(this)"></td>
+                </tr>
+                <tr id="row2">
+                    <td pos="3" class="square" onclick="squarePicked(this)"></td>
+                    <td pos="4" class="square" onclick="squarePicked(this)"></td>
+                    <td pos="5" class="square" onclick="squarePicked(this)"></td>
+                </tr>
+                <tr id="row3">
+                    <td pos="6" class="square" onclick="squarePicked(this)"></td>
+                    <td pos="7" class="square" onclick="squarePicked(this)"></td>
+                    <td pos="8" class="square" onclick="squarePicked(this)"></td>
+                </tr>
+            </table>
+        </div>
+        <p id="result">new game</p>
+    </div>
+</body>
+
+</html>
